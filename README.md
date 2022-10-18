@@ -1,4 +1,3 @@
-Projet issu du cours de "Cloud" B3.
 
 Projet mettant en pratique les principaux concepts de Git et de Docker (en lien avec Azure (Registre de conteneur).
 
