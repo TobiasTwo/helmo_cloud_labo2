@@ -30,9 +30,9 @@ jobs:
       - name: PythonTest_HelloWorld
         run: |
            python3 helloworld.py
-      - name: DockerBuild
-        run: |
-           docker build -f ./Dockerfile .
+      #- name: DockerBuild
+      #  run: |
+      #    docker build -f ./Dockerfile .
 
       - name: Login to the Container Registry  
         uses: azure/docker-login@v1
@@ -51,4 +51,4 @@ jobs:
           run-quality-checks: true 
       - name: Push image into azure
         run: |
-          docker push helloworld
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/helloworld:${{ github.run_number }} 
