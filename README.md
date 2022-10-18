@@ -1,5 +1,5 @@
 
-Projet mettant en pratique les principaux concepts de Git et de Docker (en lien avec Azure (Registre de conteneur).
+Projet mettant en pratique les principaux concepts de Git et de Docker (en lien avec Azure (Registre de conteneur)).
 
 
 Les concepts sont les suivants :
