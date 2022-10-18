@@ -5,7 +5,8 @@ Projet mettant en pratique les principaux concepts de Git et de Docker (en lien 
 
 Les concepts sont les suivants :
 
-          - Création de repository; Dockerfile Py3;
+          - Création de repository; 
+          - Dockerfile Python 3;
           - requirements.txt;
           - helloworld.py (utilisé pour les tests);
 
