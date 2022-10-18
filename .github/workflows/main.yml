@@ -43,9 +43,12 @@ jobs:
       - name: Build and Tag image
         run: |
           docker build -f ./Dockerfile -t helloworld .
-      - name: Scan image
+      - name: Scan image 
         uses: Azure/container-scan@v0
         with:
           image-name: helloworld
           severity-threshold: CRITICAL
           run-quality-checks: true 
+      - name: Push image into azure
+        run: |
+          docker push helloworld
